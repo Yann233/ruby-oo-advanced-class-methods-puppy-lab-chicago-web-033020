@@ -36,6 +36,10 @@ def initialize(name) # initializes with one argument - a name
        end
     end
 
+
+# .print_all iterates over all of the individual dogs stored in the @@all array and puts out their name to the terminal.
+# # adds this dog instance to the @@all array when called
+# # gets called inside initialize when a new Dog is created
     def save
         @@all << self
     end
