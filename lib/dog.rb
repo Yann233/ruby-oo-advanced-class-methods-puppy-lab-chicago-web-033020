@@ -3,7 +3,7 @@ require 'pry'
 class Dog
 
 attr_accessor :name
-# Create a class variable @@all set to an empty array inside your class. 
+# Create a class variable @@all set to an empty array inside your class.
 @@all = []
 
     def initialize(name)
@@ -22,7 +22,7 @@ attr_accessor :name
 
     def self.print_all
        i = 0
-       while i < all.length do 
+       while i < all.length do
             puts all[i].name
             i += 1
        end
