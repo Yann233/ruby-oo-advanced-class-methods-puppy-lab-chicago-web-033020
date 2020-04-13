@@ -4,9 +4,9 @@ class Dog
 
 attr_accessor :name
 # Create a class variable @@all set to an empty array inside your class.
-@@all = []
+@@all = [] # Has a class variable, @@all, the points to an array
 
-    def initialize(name)
+def initialize(name) # initializes with one argument - a name
         self.name = name
         self.save
     end
@@ -15,12 +15,13 @@ attr_accessor :name
 # From inside the Dog class, we can access the @@all class variable,
 # but whenever we might be interacting with our Dog class from the outside,
 # this .all class method acts as our direct interface to the @@all variable.
+# It returns all dog instances
     def self.all
         @@all
     end
 
+# A class method that empties the @@all array of all existing dogs
     def self.clear_all
-        # binding.pry
         @@all.clear
     end
 
