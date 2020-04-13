@@ -28,6 +28,7 @@ def initialize(name) # initializes with one argument - a name
 #You will need to write a class method, .print_all,
 #that iterates over all of the individual dogs stored
 #in the @@all array and puts out their name to the terminal.
+# .print_all iterates over all of the individual dogs stored in the @@all array and puts out their name to the terminal.
     def self.print_all
        i = 0
        while i < all.length do
@@ -37,9 +38,9 @@ def initialize(name) # initializes with one argument - a name
     end
 
 
-# .print_all iterates over all of the individual dogs stored in the @@all array and puts out their name to the terminal.
-# # adds this dog instance to the @@all array when called
-# # gets called inside initialize when a new Dog is created
+
+# gets called inside initialize when a new Dog is created
+# adds this dog instance to the @@all array when called
     def save
         @@all << self
     end
