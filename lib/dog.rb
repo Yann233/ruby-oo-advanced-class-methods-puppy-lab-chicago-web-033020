@@ -11,6 +11,10 @@ attr_accessor :name
         self.save
     end
 
+# Write a class method, .all, that reads this variable.
+# From inside the Dog class, we can access the @@all class variable,
+# but whenever we might be interacting with our Dog class from the outside,
+# this .all class method acts as our direct interface to the @@all variable.
     def self.all
         @@all
     end
@@ -20,6 +24,9 @@ attr_accessor :name
         @@all.clear
     end
 
+#You will need to write a class method, .print_all,
+#that iterates over all of the individual dogs stored
+#in the @@all array and puts out their name to the terminal.
     def self.print_all
        i = 0
        while i < all.length do
