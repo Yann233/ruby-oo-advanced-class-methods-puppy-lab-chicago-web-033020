@@ -8,7 +8,7 @@ attr_accessor :name
 
     def initialize(name)
         self.name = name
-        save
+        self.save
     end
 
     def self.all
